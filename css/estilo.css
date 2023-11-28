@@ -1,8 +1,24 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url(../img/Grieta\ del\ invocador.jpg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
+    
+     /* Ajusta la imagen de Fondo*/
+    margin: 0;                                                                  /* Ajustamos el Margen */
+    padding: 0;                                                                 /* Ajustamos el Relleno */
+    background: url(../img/Grieta\ del\ invocador.jpg) no-repeat center top;    /* Colocamos de fondo la imagen del url (se pon el ".." para que suba un nivel)* lo demás es para que la imagen no se repita y que se centre y este enlazada hasta arriba */
+    background-size: cover;                                                     /* Colocamos de fondo la imagen del url */
+    font-family: sans-serif;                                                    /* le damos estilo a la fuente de nuestro texto */
+    height: 100vh;                                                              /* el tamaño del alto de la imagen  sera del 100 del alto del dispositivo*/
+}
+
+     /* Ajusta la caja del formulario*/
+.Login {
+    width: 320px;                                                               /* Especifica el ancho del área de contenido, área de relleno o área de borde */
+    height: 420px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
+    background: #000;                                                         /* Color del fondo negro */
+    color #fff;                                                                 /* Color para que el texto dentro del recuadro sea de color blanco */
+    top: 50%;                                                                   /* Especifica hasta qué punto el borde del margen superior de un cuadro en posición absoluta se desplaza por debajo del borde superior del 'bloque contenedor' del cuadro. */
+    left: 50%;                                                                  /* Especifica hasta qué punto el borde del margen izquierdo de un cuadro en posición absoluta se desplaza a la derecha del borde izquierdo del 'bloque contenedor' del cuadro. */
+    position: absolute;                                                         /* establece cómo se coloca un elemento en un documento.  */
+    transform: translate(-50%, -50%) ;                                          /* Se aplica una transformación bidimensional a un elemento */
+    box-sizing: border-box;                                                     /* Especifica el comportamiento de las propiedades 'ancho' y 'alto'*/
+    padding: 70px 30px;                                                         /* Propiedad abreviada para establecer valores para el grosor del área de relleno. */
 }
