@@ -51,3 +51,22 @@ body {
     font-weight: bold;                                                          /* para que sea un poco mas remarcado*/
     display: block;                                                             /* para que este en una sola linea*/
 }
+
+
+/* Para ajustar los inputs*/
+.Login input {
+    width: 100%;                                                                /* para que cada imput abarque el 100 porciento del rcuadro*/
+    margin-bottom: 20px;                                                        /* para el margen hacia abajo*/
+}
+
+/* Para ajustar el estilo del tipo text y tipo pasword*/
+.Login input[type="text"],
+.Login input[type="password"] {
+    border: none;                                                               /* para quitar el borde*/
+    border-bottom: 1px solid #fff;                                            /* para colocarle un apequeña linea divisora color blanco*/
+    background: transparent;                                                    /* le quitamos el fondo poniendolo en transparente */
+    outline: none;                                                              /* le quitamoos el outline (Propiedad abreviada para 'estilo de contorno', 'ancho de contorno' y 'color de contorno')*/
+    height: 40px;                                                               /* le indicamos el alto que tiene*/
+    color: #fff;                                                              /* le indicamos que el color del texto va a ser blanco*/
+    font-size: 16px;                                                            /* el tamaño de la letra que va a tener */
+}
