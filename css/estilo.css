@@ -14,11 +14,20 @@ body {
     width: 320px;                                                               /* Especifica el ancho del área de contenido, área de relleno o área de borde */
     height: 420px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
     background: #000;                                                         /* Color del fondo negro */
-    color #fff;                                                                 /* Color para que el texto dentro del recuadro sea de color blanco */
+    color: #fff;                                                              /* Color para que el texto dentro del recuadro sea de color blanco */
     top: 50%;                                                                   /* Especifica hasta qué punto el borde del margen superior de un cuadro en posición absoluta se desplaza por debajo del borde superior del 'bloque contenedor' del cuadro. */
     left: 50%;                                                                  /* Especifica hasta qué punto el borde del margen izquierdo de un cuadro en posición absoluta se desplaza a la derecha del borde izquierdo del 'bloque contenedor' del cuadro. */
     position: absolute;                                                         /* establece cómo se coloca un elemento en un documento.  */
     transform: translate(-50%, -50%) ;                                          /* Se aplica una transformación bidimensional a un elemento */
     box-sizing: border-box;                                                     /* Especifica el comportamiento de las propiedades 'ancho' y 'alto'*/
     padding: 70px 30px;                                                         /* Propiedad abreviada para establecer valores para el grosor del área de relleno. */
+}
+
+.Login .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;                                                         /* Convertimos el borde en un circulo */
+    position: absolute;                                                         /* para que se ubique delante */
+    top: -50px;                                                                 /* para que se ubique casi fuera del recuadro */
+    left: calc(50% - 50px);                                                     /* Lo vamos a calcular, el 50% - los 50px que estamos colocando del top */
 }
