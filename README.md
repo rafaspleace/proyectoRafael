@@ -1,2 +1,2 @@
 # proyectoRafael
-Proyecto de prowramacion web
+Proyecto de programacion web
