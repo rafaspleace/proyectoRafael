@@ -112,12 +112,14 @@ body.body-login {
     right: 10px;                                                                 /* Mantiene una distancia de 10 píxeles desde el borde derecho del contenedor.*/
     top: 54%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
     transform: translateY(-50%);                                                 /* Ajusta verticalmente el botón para centrarlo exactamente.*/
-    color: #aaa;                                                               /* Establece el color del texto del botón. */
+    color: #fff;                                                               /* Establece el color del texto del botón. */
     font-size: 14px;                                                             /* Establece el tamaño del texto del botón.*/   
 }
 
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 
 body.body-registro {
@@ -134,7 +136,7 @@ body.body-registro {
 /* Ajusta la caja del formulario*/
 .body-registro .Registro {
    width: 320px;                                                               /* Especifica el ancho del área de contenido, área de relleno o área de borde */
-   height: 500px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
+   height: 700px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
    backdrop-filter: brightness(60%);                                           /* Color del fondo transparente pero con una tonalidad negra */
    color: #fff;                                                              /* Color para que el texto dentro del recuadro sea de color blanco */
    top: 50%;                                                                   /* Especifica hasta qué punto el borde del margen superior de un cuadro en posición absoluta se desplaza por debajo del borde superior del 'bloque contenedor' del cuadro. */
@@ -234,7 +236,7 @@ body.body-registro {
    cursor: pointer;                                                             /* Cambia el cursor al estilo de la mano */
    position: absolute;                                                          /* Permite colocar el botón en una posición absoluta dentro de su contenedor.*/
    right: 10px;                                                                 /* Mantiene una distancia de 10 píxeles desde el borde derecho del contenedor.*/
-   top: 63%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
+   top: 70%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
    transform: translateY(-50%);                                                 /* Ajusta verticalmente el botón para centrarlo exactamente.*/
    color: #fff;                                                               /* Establece el color del texto del botón. */
    font-size: 14px;                                                             /* Establece el tamaño del texto del botón.*/   
