@@ -13,7 +13,7 @@ body {
 .Login {
     width: 320px;                                                               /* Especifica el ancho del área de contenido, área de relleno o área de borde */
     height: 420px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
-    background: #000;                                                         /* Color del fondo negro */
+    backdrop-filter: brightness(60%);                                           /* Color del fondo transparente pero con una tonalidad negra */
     color: #fff;                                                              /* Color para que el texto dentro del recuadro sea de color blanco */
     top: 50%;                                                                   /* Especifica hasta qué punto el borde del margen superior de un cuadro en posición absoluta se desplaza por debajo del borde superior del 'bloque contenedor' del cuadro. */
     left: 50%;                                                                  /* Especifica hasta qué punto el borde del margen izquierdo de un cuadro en posición absoluta se desplaza a la derecha del borde izquierdo del 'bloque contenedor' del cuadro. */
@@ -40,16 +40,17 @@ body {
     margin: 0;
     padding: 0 0 20px;                                                          /* para que tenga un pequeño espaciado hacia abajo*/
     text-align: center;                                                         /* para que este centrado */
-    font-size: 22px;                                                            /* para el tamaño del titulo */
+    font-size: 28px;                                                            /* para el tamaño del titulo */
 }
 
 
-/* Cambia el estilo de los recuadros para poner el usuario y contraseña*/
+/* Cambia el estilo del texto de usuario y contraseña*/
 .Login label {
     margin: 0;
     padding: 0;                                                                 
     font-weight: bold;                                                          /* para que sea un poco mas remarcado*/
     display: block;                                                             /* para que este en una sola linea*/
+    font-size: 22px;
 }
 
 
@@ -59,7 +60,7 @@ body {
     margin-bottom: 20px;                                                        /* para el margen hacia abajo*/
 }
 
-/* Para ajustar el estilo del tipo text y tipo pasword*/
+/* Para darle estilo al input tipo text y tipo pasword*/
 .Login input[type="text"],
 .Login input[type="password"] {
     border: none;                                                               /* para quitar el borde*/
@@ -68,5 +69,37 @@ body {
     outline: none;                                                              /* le quitamoos el outline (Propiedad abreviada para 'estilo de contorno', 'ancho de contorno' y 'color de contorno')*/
     height: 40px;                                                               /* le indicamos el alto que tiene*/
     color: #fff;                                                              /* le indicamos que el color del texto va a ser blanco*/
-    font-size: 16px;                                                            /* el tamaño de la letra que va a tener */
+    font-size: 20px;                                                            /* el tamaño de la letra que va a tener */
+}
+
+/* Para darle estilo al boton que activa el formulario*/
+.Login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;                                                               /* le agregamos un alto*/
+    background: purple;                                                       /* le agregaamos un color de fondo al boton */
+    color: #fff;                                                              /* le agregaamos el color del texto del boton */
+    font-size: 18px;                                                            /* para que la letras se vea mas grande*/
+    border-radius: 20px;                                                        /* para que se vea ovalado el boton*/
+}
+
+
+/* Para darle estilo a los links*/
+.Login a {
+    text-decoration: none;                                                      /* para quitarle la coloracion por defecto*/
+    font-size: 12px;                                                            /* tamaño del texto*/
+    line-height: 20px;                                                          /* tamaño de espaciado*/
+    color: #fff;                                                              /* para cambiarle el color a gris al texto*/
+}
+
+
+.Login a:hover {
+    color: darkgray;                                                           /* se le da un color al pasar por encima del link */
+}
+
+
+/* Cambiar el color del texto de los input de Usuario y Contraseña */
+.Login input[type="text"]::placeholder,
+.Login input[type="password"]::placeholder {
+    color: #d5d5d5;                                                    /* Reemplaza el color del texto dentro de los labels */
 }
