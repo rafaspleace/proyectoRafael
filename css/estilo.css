@@ -1,4 +1,4 @@
-body {
+body.body-login {
     
      /* Ajusta la imagen de Fondo*/
     margin: 0;                                                                  /* Ajustamos el Margen */
@@ -10,7 +10,7 @@ body {
 }
 
 /* Ajusta la caja del formulario*/
-.Login {
+.body-login .Login {
     width: 320px;                                                               /* Especifica el ancho del área de contenido, área de relleno o área de borde */
     height: 420px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
     backdrop-filter: brightness(60%);                                           /* Color del fondo transparente pero con una tonalidad negra */
@@ -25,7 +25,7 @@ body {
 
 
 /* Ajusta Imagen que se va a mostrar cuando un usuario se loguee*/
-.Login .avatar {
+.body-login .Login .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;                                                         /* Convertimos el borde en un circulo */
@@ -36,7 +36,7 @@ body {
 
 
 /* Cambia el estilo del titulo*/
-.Login h1 {
+.body-login .Login h1 {
     margin: 0;
     padding: 0 0 20px;                                                          /* para que tenga un pequeño espaciado hacia abajo*/
     text-align: center;                                                         /* para que este centrado */
@@ -45,7 +45,7 @@ body {
 
 
 /* Cambia el estilo del texto de usuario y contraseña*/
-.Login label {
+.body-login .Login label {
     margin: 0;
     padding: 0;                                                                 
     font-weight: bold;                                                          /* para que sea un poco mas remarcado*/
@@ -55,14 +55,14 @@ body {
 
 
 /* Para ajustar los inputs*/
-.Login input {
+.body-login .Login input {
     width: 100%;                                                                /* para que cada imput abarque el 100 porciento del rcuadro*/
     margin-bottom: 20px;                                                        /* para el margen hacia abajo*/
 }
 
 /* Para darle estilo al input tipo text y tipo pasword*/
-.Login input[type="text"],
-.Login input[type="password"] {
+.body-login .Login input[type="text"],
+.body-login .Login input[type="password"] {
     border: none;                                                               /* para quitar el borde*/
     border-bottom: 1px solid #fff;                                            /* para colocarle un apequeña linea divisora color blanco*/
     background: transparent;                                                    /* le quitamos el fondo poniendolo en transparente */
@@ -73,7 +73,7 @@ body {
 }
 
 /* Para darle estilo al boton que activa el formulario*/
-.Login input[type="submit"]{
+.body-login .Login input[type="submit"]{
     cursor: pointer;
     border: none;
     outline: none;
@@ -86,33 +86,156 @@ body {
 
 
 /* Para darle estilo a los links*/
-.Login a {
+.body-login .Login a {
     text-decoration: none;                                                      /* para quitarle la coloracion por defecto*/
-    font-size: 12px;                                                            /* tamaño del texto*/
+    font-size: 20px;                                                            /* tamaño del texto*/
     line-height: 20px;                                                          /* tamaño de espaciado*/
-    color: #fff;                                                              /* para cambiarle el color a gris al texto*/
+    color: whitesmoke;                                                              /* para cambiarle el color a gris al texto*/
 }
 
 
-.Login a:hover {
+.body-login .Login a:hover {
     color: darkgray;                                                           /* se le da un color al pasar por encima del link */
 }
 
 
 /* Cambiar el color del texto de los input de Usuario y Contraseña */
-.Login input[type="text"]::placeholder,
-.Login input[type="password"]::placeholder {
+.body-login .Login input[type="text"]::placeholder,
+.body-login .Login input[type="password"]::placeholder {
     color: #d5d5d5;                                                            /* Reemplaza el color del texto dentro de los labels */
 }
 
 /* Estilo para el ícono de ojo abierto/cerrado */
-.toggle-password {
+.body-login .toggle-password {
     cursor: pointer;                                                             /* Cambia el cursor al estilo de la mano */
     position: absolute;                                                          /* Permite colocar el botón en una posición absoluta dentro de su contenedor.*/
     right: 10px;                                                                 /* Mantiene una distancia de 10 píxeles desde el borde derecho del contenedor.*/
-    top: 50%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
+    top: 54%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
     transform: translateY(-50%);                                                 /* Ajusta verticalmente el botón para centrarlo exactamente.*/
     color: #aaa;                                                               /* Establece el color del texto del botón. */
     font-size: 14px;                                                             /* Establece el tamaño del texto del botón.*/   
 }
 
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+body.body-registro {
+    
+    /* Ajusta la imagen de Fondo*/
+   margin: 0;                                                                  /* Ajustamos el Margen */
+   padding: 0;                                                                 /* Ajustamos el Relleno */
+   background: url(../img/Fondo\ Yummi\ pagina\ registro.jpg) no-repeat center top;              /* Colocamos de fondo la imagen del url (se pon el ".." para que suba un nivel)* lo demás es para que la imagen no se repita y que se centre y este enlazada hasta arriba */
+   background-size: cover;                                                     /* Colocamos de fondo la imagen del url */
+   font-family: sans-serif;                                                    /* le damos estilo a la fuente de nuestro texto */
+   height: 100vh;                                                              /* el tamaño del alto de la imagen  sera del 100 del alto del dispositivo*/
+}
+
+/* Ajusta la caja del formulario*/
+.body-registro .Registro {
+   width: 320px;                                                               /* Especifica el ancho del área de contenido, área de relleno o área de borde */
+   height: 500px;                                                              /* Especifica la altura del área de contenido, el área de relleno o el área de borde */
+   backdrop-filter: brightness(60%);                                           /* Color del fondo transparente pero con una tonalidad negra */
+   color: #fff;                                                              /* Color para que el texto dentro del recuadro sea de color blanco */
+   top: 50%;                                                                   /* Especifica hasta qué punto el borde del margen superior de un cuadro en posición absoluta se desplaza por debajo del borde superior del 'bloque contenedor' del cuadro. */
+   left: 50%;                                                                  /* Especifica hasta qué punto el borde del margen izquierdo de un cuadro en posición absoluta se desplaza a la derecha del borde izquierdo del 'bloque contenedor' del cuadro. */
+   position: absolute;                                                         /* establece cómo se coloca un elemento en un documento.  */
+   transform: translate(-50%, -50%) ;                                          /* Se aplica una transformación bidimensional a un elemento */
+   box-sizing: border-box;                                                     /* Especifica el comportamiento de las propiedades 'ancho' y 'alto'*/
+   padding: 70px 30px;                                                         /* Propiedad abreviada para establecer valores para el grosor del área de relleno. */
+}
+
+
+/* Ajusta Imagen que se va a mostrar cuando un usuario se loguee*/
+.body-registro .Registro .avatar {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;                                                         /* Convertimos el borde en un circulo */
+   position: absolute;                                                         /* para que se ubique delante */
+   top: -50px;                                                                 /* para que se ubique casi fuera del recuadro */
+   left: calc(50% - 50px);                                                     /* Lo vamos a calcular, el 50% - los 50px que estamos colocando del top */
+}
+
+
+/* Cambia el estilo del titulo*/
+.body-registro .Registro h1 {
+   margin: 0;
+   padding: 0 0 20px;                                                          /* para que tenga un pequeño espaciado hacia abajo*/
+   text-align: center;                                                         /* para que este centrado */
+   font-size: 28px;                                                            /* para el tamaño del titulo */
+}
+
+
+/* Cambia el estilo del texto de usuario y contraseña*/
+.body-registro .Registro label {
+   margin: 0;
+   padding: 0;                                                                 
+   font-weight: bold;                                                          /* para que sea un poco mas remarcado*/
+   display: block;                                                             /* para que este en una sola linea*/
+   font-size: 22px;
+}
+
+
+/* Para ajustar los inputs*/
+.body-registro .Registro input {
+   width: 100%;                                                                /* para que cada imput abarque el 100 porciento del rcuadro*/
+   margin-bottom: 20px;                                                        /* para el margen hacia abajo*/
+}
+
+/* Para darle estilo al input tipo text y tipo pasword*/
+.body-registro .Registro input[type="text"],
+.body-registro .Registro input[type="password"],
+.body-registro .Registro input[type="email"] {
+   border: none;                                                               /* para quitar el borde*/
+   border-bottom: 1px solid #fff;                                            /* para colocarle un apequeña linea divisora color blanco*/
+   background: transparent;                                                    /* le quitamos el fondo poniendolo en transparente */
+   outline: none;                                                              /* le quitamoos el outline (Propiedad abreviada para 'estilo de contorno', 'ancho de contorno' y 'color de contorno')*/
+   height: 40px;                                                               /* le indicamos el alto que tiene*/
+   color: #fff;                                                              /* le indicamos que el color del texto va a ser blanco*/
+   font-size: 20px;                                                            /* el tamaño de la letra que va a tener */
+}
+
+/* Para darle estilo al boton que activa el formulario*/
+.body-registro .Registro input[type="submit"]{
+   cursor: pointer;
+   border: none;
+   outline: none;
+   height: 40px;                                                               /* le agregamos un alto*/
+   background: purple;                                                       /* le agregaamos un color de fondo al boton */
+   color: #fff;                                                              /* le agregaamos el color del texto del boton */
+   font-size: 18px;                                                            /* para que la letras se vea mas grande*/
+   border-radius: 20px;                                                        /* para que se vea ovalado el boton*/
+}
+
+
+/* Para darle estilo a los links*/
+.body-registro .Registro a {
+   text-decoration: none;                                                      /* para quitarle la coloracion por defecto*/
+   font-size: 20px;                                                            /* tamaño del texto*/
+   line-height: 20px;                                                          /* tamaño de espaciado*/
+   color: whitesmoke;                                                        /* para cambiarle el color a gris al texto*/
+}
+
+
+.body-registro .Registro a:hover {
+   color: darkgray;                                                           /* se le da un color al pasar por encima del link */
+}
+
+
+/* Cambiar el color del texto de los input de Usuario y Contraseña */
+.body-registro .Registro input[type="text"]::placeholder,
+.body-registro .Registro input[type="password"]::placeholder,
+.body-registro .Registro input[type="email"]::placeholder {
+   color: #d5d5d5;                                                            /* Reemplaza el color del texto dentro de los labels */
+}
+
+/* Estilo para el ícono de ojo abierto/cerrado */
+.body-registro .toggle-password {
+   cursor: pointer;                                                             /* Cambia el cursor al estilo de la mano */
+   position: absolute;                                                          /* Permite colocar el botón en una posición absoluta dentro de su contenedor.*/
+   right: 10px;                                                                 /* Mantiene una distancia de 10 píxeles desde el borde derecho del contenedor.*/
+   top: 63%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
+   transform: translateY(-50%);                                                 /* Ajusta verticalmente el botón para centrarlo exactamente.*/
+   color: #fff;                                                               /* Establece el color del texto del botón. */
+   font-size: 14px;                                                             /* Establece el tamaño del texto del botón.*/   
+}
