@@ -3,7 +3,7 @@ body {
      /* Ajusta la imagen de Fondo*/
     margin: 0;                                                                  /* Ajustamos el Margen */
     padding: 0;                                                                 /* Ajustamos el Relleno */
-    background: url(../img/Fondo\ Yummi.jpg) no-repeat center top;    /* Colocamos de fondo la imagen del url (se pon el ".." para que suba un nivel)* lo demás es para que la imagen no se repita y que se centre y este enlazada hasta arriba */
+    background: url(../img/Fondo\ Yummi\ pagina\ principal.jpg) no-repeat center top;              /* Colocamos de fondo la imagen del url (se pon el ".." para que suba un nivel)* lo demás es para que la imagen no se repita y que se centre y este enlazada hasta arriba */
     background-size: cover;                                                     /* Colocamos de fondo la imagen del url */
     font-family: sans-serif;                                                    /* le damos estilo a la fuente de nuestro texto */
     height: 100vh;                                                              /* el tamaño del alto de la imagen  sera del 100 del alto del dispositivo*/
@@ -74,6 +74,7 @@ body {
 
 /* Para darle estilo al boton que activa el formulario*/
 .Login input[type="submit"]{
+    cursor: pointer;
     border: none;
     outline: none;
     height: 40px;                                                               /* le agregamos un alto*/
@@ -101,5 +102,17 @@ body {
 /* Cambiar el color del texto de los input de Usuario y Contraseña */
 .Login input[type="text"]::placeholder,
 .Login input[type="password"]::placeholder {
-    color: #d5d5d5;                                                    /* Reemplaza el color del texto dentro de los labels */
+    color: #d5d5d5;                                                            /* Reemplaza el color del texto dentro de los labels */
 }
+
+/* Estilo para el ícono de ojo abierto/cerrado */
+.toggle-password {
+    cursor: pointer;                                                             /* Cambia el cursor al estilo de la mano */
+    position: absolute;                                                          /* Permite colocar el botón en una posición absoluta dentro de su contenedor.*/
+    right: 10px;                                                                 /* Mantiene una distancia de 10 píxeles desde el borde derecho del contenedor.*/
+    top: 50%;                                                                    /* Coloca el botón en la mitad vertical del contenedor. */
+    transform: translateY(-50%);                                                 /* Ajusta verticalmente el botón para centrarlo exactamente.*/
+    color: #aaa;                                                               /* Establece el color del texto del botón. */
+    font-size: 14px;                                                             /* Establece el tamaño del texto del botón.*/   
+}
+
