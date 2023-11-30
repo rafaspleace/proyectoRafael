@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
+
 <!-- Contenido de la página de registro -->
 <body class = "body-registro">
 
@@ -15,30 +16,33 @@
         <h1>Regístrate Aquí</h1>
         
         <form>
+
+        <form action="respuesta.php" method="post">
+            
              <!--Usuario-->
-             <label for="Usuario">Usuario</label>                                         <!--Crea el cuadro de texto en donde se va a colocar el nombre de usuario.-->     
-             <input type="text" placeholder="Ingresa tu usuario">                                   <!--Indica que tipo de caracteres se van a colocar y nos muestra que se va a indicar antes de que ingrese cualquier cosa el usuario.-->
+             <label for="Usuario">Usuario</label>                                                   <!--Crea el cuadro de texto en donde se va a colocar el nombre de usuario.-->     
+             <input name="usuario" type="text" placeholder="Ingresa tu usuario">                                   <!--Indica que tipo de caracteres se van a colocar y nos muestra que se va a indicar antes de que ingrese cualquier cosa el usuario.-->
  
 
              <!--Nombre completo-->
              <label for="Nombre">Nombre completo</label>                                            <!--Crea el cuadro de texto en donde se va a colocar el nombre completo.-->     
-             <input type="text" placeholder="Ingresa tu nombre">                                    <!--Indica que tipo de caracteres se van a colocar y nos muestra que se va a indicar antes de que ingrese cualquier cosa el usuario.-->
+             <input name="nombre_completo" type="text" placeholder="Ingresa tu nombre">                                    <!--Indica que tipo de caracteres se van a colocar y nos muestra que se va a indicar antes de que ingrese cualquier cosa el usuario.-->
 
 
              <!--direccion-->
              <label for="Telefono">Telefono</label>                                                  <!--Crea el cuadro de texto en donde se va a colocar el numero del telefono.-->     
-             <input type="text" placeholder="Ingresa tu numero de telefono">                         <!--Indica que tipo de caracteres se van a colocar y nos muestra que se va a indicar antes de que ingrese cualquier cosa el usuario.-->
+             <input name="telefono" type="text" placeholder="Ingresa tu numero de telefono">         <!--Indica que tipo de caracteres se van a colocar y nos muestra que se va a indicar antes de que ingrese cualquier cosa el usuario.-->
 
 
 
             <!-- Correo electrónico -->
             <label for="Correo">Correo Electrónico</label>
-            <input type="email" placeholder="Ingresa tu correo electrónico">
+            <input name="correo" type="email" placeholder="Ingresa tu correo electrónico">
 
             <!-- Contraseña -->
-            <label for="Contraseña">Contraseña</label>                                              <!--Crea el cuadro de texto en donde se va a colocar la contraseña.-->
-            <input type="password" id="contraseñaInput" placeholder="Ingresa tu contraseña">        <!--Campo de contraseña oculto.-->
-            <span class="toggle-password" onclick="mostrarContraseña()">Mostrar contraseña</span>   <!--span: Elemento contenedor del botón de alternancia. onclick="mostrarContrasena()": Llama a la función mostrarContrasena() cuando se hace clic en el botón de alternancia. input[type="submit"]: Botón de envío del formulario.-->
+            <label for="Contraseña">Contraseña</label>                                                                <!--Crea el cuadro de texto en donde se va a colocar la contraseña.-->
+            <input name="contraseña" type="password" id="contraseñaInput" placeholder="Ingresa tu contraseña">        <!--Campo de contraseña oculto.-->
+            <span class="toggle-password" onclick="mostrarContraseña()">Mostrar contraseña</span>                     <!--span: Elemento contenedor del botón de alternancia. onclick="mostrarContrasena()": Llama a la función mostrarContrasena() cuando se hace clic en el botón de alternancia. input[type="submit"]: Botón de envío del formulario.-->
             
 
             <script>                                                                                    

@@ -105,7 +105,7 @@ body.body-login {
     color: #d5d5d5;                                                            /* Reemplaza el color del texto dentro de los labels */
 }
 
-/* Estilo para el ícono de ojo abierto/cerrado */
+/* Estilo para mostrar la contraseña*/
 .body-login .toggle-password {
     cursor: pointer;                                                             /* Cambia el cursor al estilo de la mano */
     position: absolute;                                                          /* Permite colocar el botón en una posición absoluta dentro de su contenedor.*/
