@@ -11,13 +11,13 @@
 <!-- Contenido de la página de registro -->
 <body class = "body-registro">
 
+<form action="respuesta.php" method="post">
+
     <div class="Registro">
         <img class="avatar" src="img/Logo.webp" alt="Logo de Yummi">
         <h1>Regístrate Aquí</h1>
-        
-        <form>
 
-        <form action="respuesta.php" method="post">
+        <form>
             
              <!--Usuario-->
              <label for="Usuario">Usuario</label>                                                   <!--Crea el cuadro de texto en donde se va a colocar el nombre de usuario.-->     
@@ -67,5 +67,7 @@
         </form>
         
     </div>
+
+</form>
 </body>
 </html>
